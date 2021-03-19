@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import (home,about,event
+from .views import (home,about,event,rules_regulation
                     )
 
 app_name='base'
@@ -11,6 +11,7 @@ urlpatterns = [
      path('about/',about,name ='about'),
 
     path('event/',event,name ='event'),
+    path('rules_regulation/',rules_regulation,name ='rules_regulation'),
     
     
 ]

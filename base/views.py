@@ -2,24 +2,25 @@ from django.shortcuts import render
 
 
 def home(request):
-    context={
-        # 'items':Item.objects.all()
-    }
-    return render(request,'index.html',context)
+    return render(request,'index.html')
 
 
 def about(request):
     context={
         # 'items':Item.objects.all()
     }
-    return render(request,'about.html',context)
+    return render(request,'about.html')
 
 
 def event(request):
-    context={
-        # 'items':Item.objects.all()
-    }
-    return render(request,'event.html',context)
+    return render(request,'event.html')
+
+def rules_regulation(request):
+    return render(request,'rules.html')
+
+
+def services(request):
+    return render(request,'rules.html')
 
 
 
