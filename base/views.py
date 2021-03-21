@@ -20,7 +20,11 @@ def rules_regulation(request):
 
 
 def services(request):
-    return render(request,'rules.html')
+    return render(request,'services.html')
+
+def collection(request):
+    return render(request,'collection.html')
+
 
 
 
