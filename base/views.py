@@ -25,6 +25,9 @@ def services(request):
 def collection(request):
     return render(request,'collection.html')
 
+def ebooks_list(request):
+    return render(request,'ebooks_list.html')
+
 
 
 

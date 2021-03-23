@@ -1,5 +1,7 @@
 from django.urls import path
-from .views import (home,about,event,rules_regulation,services,collection
+from .views import (home,about,event,rules_regulation,
+                services,collection,
+                ebooks_list
                     )
 
 app_name='base'
@@ -14,6 +16,7 @@ urlpatterns = [
     path('rules_regulation/',rules_regulation,name ='rules_regulation'),
     path('services/',services,name ='services'),
     path('collection/',collection,name ='collection'),
+    path('ebooks_list/',ebooks_list,name ='ebooks_list'),
     
     
 ]
