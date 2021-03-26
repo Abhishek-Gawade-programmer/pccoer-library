@@ -11,8 +11,8 @@ urlpatterns = [
 
     path('',home,name ='home'),
      path('about/',about,name ='about'),
-
-    path('event/',event,name ='event'),
+     path('event/',event,name ='event'),
+    # path('question_paper/',question_paper,name ='question_paper'),
     path('rules_regulation/',rules_regulation,name ='rules_regulation'),
     path('services/',services,name ='services'),
     path('collection/',collection,name ='collection'),

@@ -28,6 +28,9 @@ def collection(request):
 def ebooks_list(request):
     return render(request,'ebooks_list.html')
 
+def question_paper(request):
+    return render(request,'question_papers.html')
+
 
 
 
