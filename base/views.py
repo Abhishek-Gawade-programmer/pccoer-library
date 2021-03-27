@@ -34,6 +34,14 @@ def question_paper(request):
 def hod_desk(request):
     return render(request,'hod_desk.html')
 
+def faculty_page(request):
+    return render(request,'faculty.html')
+
+
+def newspaper_page(request):
+    return render(request,'newspaper.html')
+
+
 
 
 
