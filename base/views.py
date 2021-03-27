@@ -31,6 +31,10 @@ def ebooks_list(request):
 def question_paper(request):
     return render(request,'question_papers.html')
 
+def hod_desk(request):
+    return render(request,'hod_desk.html')
+
+
 
 
 
