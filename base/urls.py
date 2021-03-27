@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import (home,about,event,rules_regulation,
                 services,collection,
-                ebooks_list,hod_desk,faculty_page
+                ebooks_list,hod_desk,faculty_page,newspaper_page
                     )
 
 app_name='base'
@@ -19,6 +19,7 @@ urlpatterns = [
     path('ebooks_list/',ebooks_list,name ='ebooks_list'),
     path('hod_desk/',hod_desk,name ='hod_desk'),
     path('faculty_page/',faculty_page,name ='faculty_page'),
+    path('newspaper_page/',newspaper_page,name ='newspaper_page'),
     
     
 ]

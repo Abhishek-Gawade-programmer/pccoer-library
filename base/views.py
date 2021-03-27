@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 
 def home(request):
+    print('#'*20,request.POST)
     return render(request,'index.html')
 
 
