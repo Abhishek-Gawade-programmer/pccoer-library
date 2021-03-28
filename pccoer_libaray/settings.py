@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -50,6 +53,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
+
+
 ]
 
 ROOT_URLCONF = 'pccoer_libaray.urls'
@@ -129,3 +136,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 EMAIL_HOST_USER =os.environ.get('EMAIL_HOST_USER')
 print('gfhfgh',EMAIL_HOST_USER)
+
+
+STATICFILES_STORAGE ='whitenoise.storages.CompressedManifestStaticFilesStorage'
+
+django_heroku.settings(locals())
